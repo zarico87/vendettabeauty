@@ -1,117 +1,177 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VENDETTA_BEAUTY</title>
+    <title>Contacto — Vendetta Beauty</title>
+    <meta name="description" content="Contactá a Vendetta Beauty para reservar tu turno. Formulario de contacto, WhatsApp y redes sociales. Cosmiatría profesional.">
 
     <link rel="stylesheet" href="css/style.css">
-     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 </head>
 <body>
-    <nav>
-        <div class="logo-container">
-            <img  class="logo" src="img/LOGO2026VENDETTACONSOMBRAOSCURA.png" alt="logodevendetta">
-        </div>
-        <div class="link-container">
+
+    <!-- ═══ NAVIGATION ═══ -->
+    <nav class="site-nav" id="site-nav">
+        <a href="index.html" class="nav-logo">
+            <img src="img/LOGO2026VENDETTACONSOMBRAOSCURA.png" alt="Vendetta Beauty Logo">
+        </a>
+        <div class="nav-links" id="nav-links">
             <a href="index.html">Home</a>
             <a href="servicios.html">Servicios</a>
-            <a href="contacto.html">Contacto</a>
+            <a href="blog.html">Blog</a>
+            <a href="contacto.html" class="active">Contacto</a>
         </div>
-        
+        <button class="btn-menu" id="btn-menu" aria-label="Abrir menú">
+            <i class="bi bi-list"></i>
+        </button>
     </nav>
 
-    <button class="btn-menu" id="btn-menu">
-        <i class="bi bi-list"></i>
-      </button>
+    <div class="mobile-nav-overlay" id="mobile-nav">
+        <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Cerrar menú">
+            <i class="bi bi-x-lg"></i>
+        </button>
+        <a href="index.html">Home</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="blog.html">Blog</a>
+        <a href="contacto.html">Contacto</a>
+    </div>
 
-      <h1> Vendetta Beauty</h1>
-     
-    <header>
-        <div class="title-container">
-            <h2>Cosmiatría Integral & Wellness</h2>
+    <div class="nav-spacer"></div>
+
+    <!-- ═══ PAGE HERO ═══ -->
+    <section class="hero-section" id="hero" style="padding: 3rem 2rem;">
+        <div class="hero-content">
+            <h1 class="hero-title" style="font-size: 2.8rem;">Contacto</h1>
+            <p class="hero-slogan">Reservá tu turno o hacenos tu consulta</p>
         </div>
-        <div class="slogan-container">
-            <h3 class="slogan">Sentirse para verse bien</h3>
-        </div>
-        
-        
-      
-    </header>
+    </section>
 
-    <main class="contacto-container">
-        <div class="formulario-container">
-
-            <div class="parrafoContacto">
-                <p >Para Consultas o Turnos llená el Formulario <i class="bi bi-arrow-down-circle"></i></p>
-            </div>
-           
-           
-           <form class="formulario" >
-            <div  class="info-label" >
-                <label for="nombre"> Nombre y Apellido </label>
-            </div>
-            <div class="info-input">
-                <input type="text"  id="nombre" placeholder="nombre y apellido" required>
-            </div>
-
-            
-    
-            <div class="info-label">
-                <label for="email"> Email</label>
-            </div> 
-
-            <div class="info-input">
-                <input type="email" id="email" placeholder="tusitio@mail.com" required>
-            </div>
-    
-            <div class="info-label">
-                <label for="telefono">Teléfono</label>
-            </div> 
-    
-            <div class="info-input" >
-                <input type="number"  id="telefono" placeholder="011-15777777" required>
-            </div>
-            <div class="info-label">
-                <label class="mensaje1" for="mensaje">Mensaje</label>
-            </div> 
-            <div class="info-input">
-                <textarea  id="mensaje1" cols="30" rows="10">Escribi tu consulta</textarea required> 
-            </div>
-
-            <div class="btn-container">
-                <input class="btn-enviar" type="submit" value="Enviar mensaje">
-                <input class="btn-reset" type="reset" value="Borrar">
-
-            </div>
-                
-    
-    
-           </form>
-
-        </div> 
-
-        <div class="wsp-container">
-            <div class="text-wsp">
-                <p>Escaneá el Qr</p>
-            </div>
-            <div class="wspcontainer-img">
-                <img src="img/qr2026.png" alt="codigo Qr de whatsapp">
-            </div>
+    <!-- ═══ CONTACT SECTION ═══ -->
+    <section class="contact-section">
+        <div class="section-heading reveal">
+            <h2>Escribinos</h2>
+            <div class="heading-line"></div>
+            <p>Completá el formulario y te responderemos a la brevedad</p>
         </div>
 
+        <div class="contact-grid">
+            <!-- ── Form ── -->
+            <div class="reveal">
+                <form class="contact-form" id="contact-form" novalidate>
+                    <div class="form-group">
+                        <label for="contact-name">Nombre y Apellido</label>
+                        <input type="text" id="contact-name" name="nombre" placeholder="Tu nombre completo" required>
+                        <p class="error-message" id="error-name">Por favor ingresá tu nombre</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-email">Email</label>
+                        <input type="email" id="contact-email" name="email" placeholder="tu@email.com" required>
+                        <p class="error-message" id="error-email">Ingresá un email válido</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-phone">Teléfono</label>
+                        <input type="tel" id="contact-phone" name="telefono" placeholder="011-15XXXXXXX" required>
+                        <p class="error-message" id="error-phone">Ingresá tu número de teléfono</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-service">Servicio de Interés</label>
+                        <input type="text" id="contact-service" name="servicio" placeholder="Ej: Limpieza facial, Lifting...">
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-message">Mensaje</label>
+                        <textarea id="contact-message" name="mensaje" rows="5" placeholder="Contanos tu consulta..." required></textarea>
+                        <p class="error-message" id="error-message">Por favor escribí tu consulta</p>
+                    </div>
+                    <div class="form-buttons">
+                        <button type="submit" class="btn-primary" id="btn-submit">
+                            <i class="bi bi-send"></i> Enviar mensaje
+                        </button>
+                        <button type="reset" class="btn-secondary" id="btn-reset">
+                            <i class="bi bi-arrow-counterclockwise"></i> Limpiar
+                        </button>
+                    </div>
+                </form>
 
-    </main>
+                <!-- Success Message -->
+                <div class="form-success" id="form-success">
+                    <i class="bi bi-check-circle"></i>
+                    <h3>¡Mensaje enviado!</h3>
+                    <p>Gracias por contactarnos. Te responderemos a la brevedad.</p>
+                </div>
+            </div>
 
-      <script src="script/script.js"></script>
+            <!-- ── Info Panel ── -->
+            <div class="contact-info-panel reveal reveal-delay-1">
+                <div class="contact-info-card">
+                    <h3><i class="bi bi-whatsapp"></i> WhatsApp</h3>
+                    <p>Escaneá el código QR para contactarnos directamente por WhatsApp y agendar tu turno.</p>
+                    <div class="contact-qr">
+                        <img src="img/qr2026.png" alt="Código QR de WhatsApp de Vendetta Beauty">
+                    </div>
+                </div>
 
-    <footer>
-        <p class="pieDepagina">Copyright 2023 by Zarico.</p>
-        <div class="instagram"><p><i class="bi bi-instagram"></i> vendetta.beauty</p></div>
+                <div class="contact-info-card">
+                    <h3><i class="bi bi-instagram"></i> Instagram</h3>
+                    <p>Seguinos en Instagram para ver nuestros trabajos, promociones y novedades.</p>
+                    <a href="https://www.instagram.com/vendetta.beauty" target="_blank" rel="noopener" class="blog-read-more" style="margin-top: 0.8rem;">
+                        @vendetta.beauty <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="contact-info-card">
+                    <h3><i class="bi bi-clock"></i> Horarios</h3>
+                    <p>Lunes a Viernes: 9:00 — 19:00<br>Sábados: 9:00 — 14:00<br>Domingos: Cerrado</p>
+                </div>
+
+                <div class="contact-info-card">
+                    <h3><i class="bi bi-geo-alt"></i> Redes Sociales</h3>
+                    <div class="contact-social-links">
+                        <a href="https://www.instagram.com/vendetta.beauty" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/" target="_blank" rel="noopener" class="social-link" aria-label="WhatsApp">
+                            <i class="bi bi-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ FOOTER ═══ -->
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <img src="img/LOGO2026VENDETTA.png" alt="Vendetta Beauty" class="footer-logo">
+                <p>Cosmiatría Integral & Wellness. Cuidado profesional y personalizado de tu piel con los mejores productos y técnicas.</p>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/vendetta.beauty" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="https://wa.me/" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4>Navegación</h4>
+                <a href="index.html">Home</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="blog.html">Blog</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+            <div class="footer-column">
+                <h4>Servicios</h4>
+                <a href="servicios.html">Limpieza Facial</a>
+                <a href="servicios.html">Lifting de Pestañas</a>
+                <a href="servicios.html">Esmaltado</a>
+                <a href="servicios.html">Dermaplaning</a>
+                <a href="servicios.html">Microneedling</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year"></span> Vendetta Beauty — Todos los derechos reservados</p>
+            <p>Diseño por Zarico</p>
+        </div>
     </footer>
-    
+
+    <script src="script/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog — Vendetta Beauty</title>
+    <meta name="description" content="Blog de Vendetta Beauty: tips de skincare, tendencias en cosmiatría, consejos de cuidado facial y novedades en tratamientos estéticos.">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+</head>
+<body>
+
+    <!-- ═══ NAVIGATION ═══ -->
+    <nav class="site-nav" id="site-nav">
+        <a href="index.html" class="nav-logo">
+            <img src="img/LOGO2026VENDETTACONSOMBRAOSCURA.png" alt="Vendetta Beauty Logo">
+        </a>
+        <div class="nav-links" id="nav-links">
+            <a href="index.html">Home</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="blog.html" class="active">Blog</a>
+            <a href="contacto.html">Contacto</a>
+        </div>
+        <button class="btn-menu" id="btn-menu" aria-label="Abrir menú">
+            <i class="bi bi-list"></i>
+        </button>
+    </nav>
+
+    <div class="mobile-nav-overlay" id="mobile-nav">
+        <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Cerrar menú">
+            <i class="bi bi-x-lg"></i>
+        </button>
+        <a href="index.html">Home</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="blog.html">Blog</a>
+        <a href="contacto.html">Contacto</a>
+    </div>
+
+    <div class="nav-spacer"></div>
+
+    <!-- ═══ PAGE HERO ═══ -->
+    <section class="hero-section" id="hero" style="padding: 3rem 2rem;">
+        <div class="hero-content">
+            <h1 class="hero-title" style="font-size: 2.8rem;">Blog & Tips</h1>
+            <p class="hero-slogan">Consejos profesionales para el cuidado de tu piel y belleza</p>
+        </div>
+    </section>
+
+    <!-- ═══ BLOG SECTION ═══ -->
+    <section class="blog-section" id="blog-page">
+        <div class="section-heading reveal">
+            <h2>Artículos Recientes</h2>
+            <div class="heading-line"></div>
+        </div>
+
+        <!-- ── Filters ── -->
+        <div class="blog-filters reveal" id="blog-filters">
+            <button class="blog-filter-btn active" data-filter="all">Todos</button>
+            <button class="blog-filter-btn" data-filter="skincare">Skincare</button>
+            <button class="blog-filter-btn" data-filter="tratamientos">Tratamientos</button>
+            <button class="blog-filter-btn" data-filter="tendencias">Tendencias</button>
+            <button class="blog-filter-btn" data-filter="unas">Uñas</button>
+            <button class="blog-filter-btn" data-filter="tips">Tips</button>
+        </div>
+
+        <!-- ── Blog Grid ── -->
+        <div class="blog-grid" id="blog-grid">
+
+            <!-- Article 1 -->
+            <article class="blog-card reveal" data-category="skincare" data-article="1">
+                <div class="blog-card-image">
+                    <img src="img/limpieza.png" alt="Rutina de skincare diaria">
+                </div>
+                <div class="blog-card-body">
+                    <div class="blog-card-meta">
+                        <span class="blog-category">Skincare</span>
+                        <span>15 Mayo, 2026</span>
+                    </div>
+                    <h3>5 pasos esenciales para tu rutina de skincare</h3>
+                    <p class="blog-excerpt">Descubrí cómo armar una rutina de cuidado facial efectiva que se adapte a tu tipo de piel con productos que realmente funcionan.</p>
+                    <button class="blog-read-more" data-article="1">Leer más <i class="bi bi-arrow-right"></i></button>
+                </div>
+            </article>
+
+            <!-- Article 2 -->
+            <article class="blog-card reveal reveal-delay-1" data-category="tratamientos" data-article="2">
+                <div class="blog-card-image">
+                    <img src="img/tratamientos.png" alt="Tratamiento con exosomas">
+                </div>
+                <div class="blog-card-body">
+                    <div class="blog-card-meta">
+                        <span class="blog-category">Tratamientos</span>
+                        <span>02 Mayo, 2026</span>
+                    </div>
+                    <h3>Exosomas: la revolución en rejuvenecimiento facial</h3>
+                    <p class="blog-excerpt">Los exosomas son la nueva frontera en medicina estética. Conocé cómo funcionan y por qué están cambiando los tratamientos anti-age.</p>
+                    <button class="blog-read-more" data-article="2">Leer más <i class="bi bi-arrow-right"></i></button>
+                </div>
+            </article>
+
+            <!-- Article 3 -->
+            <article class="blog-card reveal reveal-delay-2" data-category="tendencias" data-article="3">
+                <div class="blog-card-image">
+                    <img src="img/cejas.png" alt="Brown Lamination tendencia">
+                </div>
+                <div class="blog-card-body">
+                    <div class="blog-card-meta">
+                        <span class="blog-category">Tendencias</span>
+                        <span>20 Abril, 2026</span>
+                    </div>
+                    <h3>Brown Lamination: la tendencia que llegó para quedarse</h3>
+                    <p class="blog-excerpt">Todo lo que necesitás saber sobre este tratamiento que da estructura, volumen y definición a tus cejas de forma natural.</p>
+                    <button class="blog-read-more" data-article="3">Leer más <i class="bi bi-arrow-right"></i></button>
+                </div>
+            </article>
+
+            <!-- Article 4 -->
+            <article class="blog-card reveal" data-category="unas" data-article="4">
+                <div class="blog-card-image">
+                    <img src="img/esmaltado.png" alt="Cuidado de uñas">
+                </div>
+                <div class="blog-card-body">
+                    <div class="blog-card-meta">
+                        <span class="blog-category">Uñas</span>
+                        <span>08 Abril, 2026</span>
+                    </div>
+                    <h3>Cómo cuidar tus uñas entre sesiones de esmaltado</h3>
+                    <p class="blog-excerpt">Tips profesionales para mantener tus uñas saludables y fuertes entre cada visita al salón, sin resignar estilo.</p>
+                    <button class="blog-read-more" data-article="4">Leer más <i class="bi bi-arrow-right"></i></button>
+                </div>
+            </article>
+
+            <!-- Article 5 -->
+            <article class="blog-card reveal reveal-delay-1" data-category="skincare" data-article="5">
+                <div class="blog-card-image">
+                    <img src="img/dermaplaning.jpeg" alt="Dermaplaning beneficios">
+                </div>
+                <div class="blog-card-body">
+                    <div class="blog-card-meta">
+                        <span class="blog-category">Skincare</span>
+                        <span>25 Marzo, 2026</span>
+                    </div>
+                    <h3>Dermaplaning: qué es y por qué tu piel lo necesita</h3>
+                    <p class="blog-excerpt">Conocé los beneficios del dermaplaning, cómo se realiza y por qué es el complemento perfecto para tu rutina de cuidado facial.</p>
+                    <button class="blog-read-more" data-article="5">Leer más <i class="bi bi-arrow-right"></i></button>
+                </div>
+            </article>
+
+            <!-- Article 6 -->
+            <article class="blog-card reveal reveal-delay-2" data-category="tips" data-article="6">
+                <div class="blog-card-image">
+                    <img src="img/permanente.png" alt="Cuidado de pestañas">
+                </div>
+                <div class="blog-card-body">
+                    <div class="blog-card-meta">
+                        <span class="blog-category">Tips</span>
+                        <span>10 Marzo, 2026</span>
+                    </div>
+                    <h3>Cuidados post lifting de pestañas: guía completa</h3>
+                    <p class="blog-excerpt">Las primeras 24 horas son claves. Seguí estos consejos para que tu lifting dure más y tus pestañas se mantengan perfectas.</p>
+                    <button class="blog-read-more" data-article="6">Leer más <i class="bi bi-arrow-right"></i></button>
+                </div>
+            </article>
+
+            <!-- Article 7 -->
+            <article class="blog-card reveal" data-category="tratamientos" data-article="7">
+                <div class="blog-card-image">
+                    <img src="img/microneedling.jpeg" alt="Microneedling procedimiento">
+                </div>
+                <div class="blog-card-body">
+                    <div class="blog-card-meta">
+                        <span class="blog-category">Tratamientos</span>
+                        <span>28 Febrero, 2026</span>
+                    </div>
+                    <h3>Microneedling: todo lo que tenés que saber antes de tu primera sesión</h3>
+                    <p class="blog-excerpt">El microneedling es uno de los tratamientos más efectivos para rejuvenecer la piel. Te contamos la preparación, procedimiento y cuidados.</p>
+                    <button class="blog-read-more" data-article="7">Leer más <i class="bi bi-arrow-right"></i></button>
+                </div>
+            </article>
+
+            <!-- Article 8 -->
+            <article class="blog-card reveal reveal-delay-1" data-category="unas" data-article="8">
+                <div class="blog-card-image">
+                    <img src="img/esculpidas.png" alt="Uñas esculpidas SoftGel">
+                </div>
+                <div class="blog-card-body">
+                    <div class="blog-card-meta">
+                        <span class="blog-category">Uñas</span>
+                        <span>15 Febrero, 2026</span>
+                    </div>
+                    <h3>SoftGel vs Acrílico: ¿qué técnica es mejor para vos?</h3>
+                    <p class="blog-excerpt">Comparamos las dos técnicas más populares de extensiones de uñas para que elijas la que mejor se adapte a tu estilo de vida.</p>
+                    <button class="blog-read-more" data-article="8">Leer más <i class="bi bi-arrow-right"></i></button>
+                </div>
+            </article>
+
+            <!-- Article 9 -->
+            <article class="blog-card reveal reveal-delay-2" data-category="tips" data-article="9">
+                <div class="blog-card-image">
+                    <img src="img/tratamientos.png" alt="Protección solar">
+                </div>
+                <div class="blog-card-body">
+                    <div class="blog-card-meta">
+                        <span class="blog-category">Tips</span>
+                        <span>01 Febrero, 2026</span>
+                    </div>
+                    <h3>Protector solar: tu aliado número uno contra el envejecimiento</h3>
+                    <p class="blog-excerpt">El SPF es el paso más importante de cualquier rutina. Aprendé a elegir el protector ideal y a aplicarlo correctamente.</p>
+                    <button class="blog-read-more" data-article="9">Leer más <i class="bi bi-arrow-right"></i></button>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- ═══ BLOG MODAL ═══ -->
+    <div class="blog-modal-overlay" id="blog-modal-overlay">
+        <div class="blog-modal" id="blog-modal">
+            <div class="blog-modal-header">
+                <img id="modal-image" src="" alt="Imagen del artículo">
+                <button class="blog-modal-close" id="blog-modal-close" aria-label="Cerrar artículo">
+                    <i class="bi bi-x-lg"></i>
+                </button>
+            </div>
+            <div class="blog-modal-content">
+                <div class="modal-meta">
+                    <span id="modal-category" class="blog-category"></span>
+                    <span id="modal-date"></span>
+                </div>
+                <h2 id="modal-title"></h2>
+                <div class="modal-body" id="modal-body"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══ CTA ═══ -->
+    <section class="cta-section reveal">
+        <h2>¿Tenés alguna consulta?</h2>
+        <p>Escribinos y con gusto te asesoramos sobre el tratamiento ideal para vos</p>
+        <a href="contacto.html" class="cta-btn">Contactanos</a>
+    </section>
+
+    <!-- ═══ FOOTER ═══ -->
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <img src="img/LOGO2026VENDETTA.png" alt="Vendetta Beauty" class="footer-logo">
+                <p>Cosmiatría Integral & Wellness. Cuidado profesional y personalizado de tu piel con los mejores productos y técnicas.</p>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/vendetta.beauty" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="https://wa.me/" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4>Navegación</h4>
+                <a href="index.html">Home</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="blog.html">Blog</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+            <div class="footer-column">
+                <h4>Servicios</h4>
+                <a href="servicios.html">Limpieza Facial</a>
+                <a href="servicios.html">Lifting de Pestañas</a>
+                <a href="servicios.html">Esmaltado</a>
+                <a href="servicios.html">Dermaplaning</a>
+                <a href="servicios.html">Microneedling</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year"></span> Vendetta Beauty — Todos los derechos reservados</p>
+            <p>Diseño por Zarico</p>
+        </div>
+    </footer>
+
+    <script src="script/script.js"></script>
+</body>
+</html>

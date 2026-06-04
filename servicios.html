@@ -1,107 +1,215 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VENDETTA_BEAUTY</title>
+    <title>Servicios — Vendetta Beauty</title>
+    <meta name="description" content="Conocé todos nuestros servicios: limpieza facial, lifting de pestañas, esmaltado semipermanente, uñas SoftGel, dermaplaning, microneedling y tratamientos faciales.">
 
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 </head>
 <body>
-    <nav>
-        <div class="logo-container">
-            <img  class="logo" src="img/LOGO2026VENDETTACONSOMBRAOSCURA.png" alt="logodevendetta">
-        </div>
-        <div class="link-container">
+
+    <!-- ═══ NAVIGATION ═══ -->
+    <nav class="site-nav" id="site-nav">
+        <a href="index.html" class="nav-logo">
+            <img src="img/LOGO2026VENDETTACONSOMBRAOSCURA.png" alt="Vendetta Beauty Logo">
+        </a>
+        <div class="nav-links" id="nav-links">
             <a href="index.html">Home</a>
-            <a href="servicios.html">Servicios</a>
+            <a href="servicios.html" class="active">Servicios</a>
+            <a href="blog.html">Blog</a>
             <a href="contacto.html">Contacto</a>
         </div>
-        
+        <button class="btn-menu" id="btn-menu" aria-label="Abrir menú">
+            <i class="bi bi-list"></i>
+        </button>
     </nav>
-    
-    <button class="btn-menu" id="btn-menu">
-      <i class="bi bi-list"></i>
-    </button>
-    
-      <h1> Vendetta Beauty</h1>
-     
-    <header>
-        <div class="title-container">
-            <h2>Cosmiatría Integral & Wellness</h2>
+
+    <div class="mobile-nav-overlay" id="mobile-nav">
+        <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Cerrar menú">
+            <i class="bi bi-x-lg"></i>
+        </button>
+        <a href="index.html">Home</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="blog.html">Blog</a>
+        <a href="contacto.html">Contacto</a>
+    </div>
+
+    <div class="nav-spacer"></div>
+
+    <!-- ═══ PAGE HERO ═══ -->
+    <section class="hero-section" id="hero" style="padding: 3rem 2rem;">
+        <div class="hero-content">
+            <h1 class="hero-title" style="font-size: 2.8rem;">Nuestros Servicios</h1>
+            <p class="hero-slogan">Tratamientos profesionales para tu bienestar y belleza</p>
         </div>
-        <div class="slogan-container">
-            <h3 class="slogan">Sentirse para verse bien</h3>
+    </section>
+
+    <!-- ═══ SERVICES GRID ═══ -->
+    <section class="services-page-section">
+        <div class="section-heading reveal">
+            <h2>Servicios Disponibles</h2>
+            <div class="heading-line"></div>
+            <p>Cada servicio es personalizado según tus necesidades</p>
         </div>
-        
-        
-      
-    </header>
-    <main>
-        <div class="pageServicios">
-            <div class="title-servicios">
-                <h3>Servicios Disponibles</h3>
+
+        <div class="services-page-grid">
+            <!-- Limpieza Profunda -->
+            <div class="service-page-card reveal">
+                <div class="card-image">
+                    <img src="img/limpieza.png" alt="Limpieza profunda facial antes y después">
+                    <div class="card-overlay">
+                        <p>Limpieza profunda con extracción, mascarilla y alta frecuencia para una piel renovada.</p>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3>Limpieza Profunda Facial</h3>
+                    <span class="card-icon"><i class="bi bi-stars"></i></span>
+                </div>
             </div>
-         
-            
-          <div class="servicios-lista">
-            
-          <div class="card-servicios">
-             <img src="img/limpieza.png" alt="mujer antes y despues de la limpieza">  
-             <div class="img-texto">Limpieza profunda facial</div>
-          </div>
-          
-          
-          <div class="card-servicios">
-              <img src="img/cejas.png" alt="perfilado de cejas antes y después">
-              <div class="img-texto">Perfilado de Cejas</div>
-          </div>
 
-          <div class="card-servicios">
-            <img src="img/permanente.png" alt="ojos con permanente de pestañas">
-            <div class="img-texto">Lifting de Pestañas</div>
-          </div>
+            <!-- Perfilado de Cejas -->
+            <div class="service-page-card reveal reveal-delay-1">
+                <div class="card-image">
+                    <img src="img/cejas.png" alt="Perfilado de cejas antes y después">
+                    <div class="card-overlay">
+                        <p>Diseño personalizado de cejas con técnica de hilo y/o cera, incluye tinte.</p>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3>Perfilado de Cejas</h3>
+                    <span class="card-icon"><i class="bi bi-stars"></i></span>
+                </div>
+            </div>
 
-          <div class="card-servicios">
-            <img src="img/esmaltado.png" alt="manos con esmaltado y nail art">
-            <div class="img-texto">Esmaltado Semipermanente</div>
-          </div>
+            <!-- Lifting de Pestañas -->
+            <div class="service-page-card reveal reveal-delay-2">
+                <div class="card-image">
+                    <img src="img/permanente.png" alt="Lifting de pestañas">
+                    <div class="card-overlay">
+                        <p>Lifting coreano que curva y eleva tus pestañas naturales, con tinte incluido.</p>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3>Lifting de Pestañas</h3>
+                    <span class="card-icon"><i class="bi bi-stars"></i></span>
+                </div>
+            </div>
 
-          <div class="card-servicios">
-            <img src="img/esculpidas.png" alt="manos con uñas esculpidas con nail art">
-            <div class="img-texto">Uñas SoftGel</div>
-          </div>
-          <div class="card-servicios">
-            <img src="img/dermaplaning.jpeg" alt="tecnica de dermaplaning en rostro">
-            <div class="img-texto">Dermaplaning</div>
-          </div>
-          <div class="card-servicios">
-            <img src="img/microneedling.jpeg" alt="tecnica de microneedling">
-            <div class="img-texto">Microneedling</div>
-          </div>
-          <div class="card-servicios">
-            <img src="img/tratamientos.png" alt="tratamientos faciales y corporales">
-            <div class="img-texto">Tratamientos Faciales y Corporales</div>
-          </div>
-          </div>
+            <!-- Esmaltado Semipermanente -->
+            <div class="service-page-card reveal reveal-delay-3">
+                <div class="card-image">
+                    <img src="img/esmaltado.png" alt="Esmaltado semipermanente y nail art">
+                    <div class="card-overlay">
+                        <p>Esmaltado con técnica semipermanente, duración de hasta 3 semanas con brillo intacto.</p>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3>Esmaltado Semipermanente</h3>
+                    <span class="card-icon"><i class="bi bi-stars"></i></span>
+                </div>
+            </div>
+
+            <!-- Uñas SoftGel -->
+            <div class="service-page-card reveal">
+                <div class="card-image">
+                    <img src="img/esculpidas.png" alt="Uñas SoftGel esculpidas con nail art">
+                    <div class="card-overlay">
+                        <p>Extensiones de uñas en SoftGel, naturales y livianas, con diseños personalizados.</p>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3>Uñas SoftGel</h3>
+                    <span class="card-icon"><i class="bi bi-stars"></i></span>
+                </div>
+            </div>
+
+            <!-- Dermaplaning -->
+            <div class="service-page-card reveal reveal-delay-1">
+                <div class="card-image">
+                    <img src="img/dermaplaning.jpeg" alt="Técnica de dermaplaning en rostro">
+                    <div class="card-overlay">
+                        <p>Exfoliación mecánica que elimina vello facial y células muertas, dejando la piel suave.</p>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3>Dermaplaning</h3>
+                    <span class="card-icon"><i class="bi bi-stars"></i></span>
+                </div>
+            </div>
+
+            <!-- Microneedling -->
+            <div class="service-page-card reveal reveal-delay-2">
+                <div class="card-image">
+                    <img src="img/microneedling.jpeg" alt="Técnica de microneedling">
+                    <div class="card-overlay">
+                        <p>Estimulación de colágeno mediante micro-punciones para rejuvenecimiento y cicatrices.</p>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3>Microneedling</h3>
+                    <span class="card-icon"><i class="bi bi-stars"></i></span>
+                </div>
+            </div>
+
+            <!-- Tratamientos Faciales y Corporales -->
+            <div class="service-page-card reveal reveal-delay-3">
+                <div class="card-image">
+                    <img src="img/tratamientos.png" alt="Tratamientos faciales y corporales">
+                    <div class="card-overlay">
+                        <p>Tratamientos integrales adaptados a cada tipo de piel: hidratación, anti-age, manchas y más.</p>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3>Tratamientos Faciales y Corporales</h3>
+                    <span class="card-icon"><i class="bi bi-stars"></i></span>
+                </div>
+            </div>
         </div>
-        
-        
-        
-      
+    </section>
 
+    <!-- ═══ CTA ═══ -->
+    <section class="cta-section reveal">
+        <h2>¿Querés reservar un turno?</h2>
+        <p>Contactanos para agendar tu cita y recibir atención personalizada</p>
+        <a href="contacto.html" class="cta-btn">Reservar turno</a>
+    </section>
 
-
-    </main>
-
-    <script src="./script/script.js"></script>
-
-    <footer>
-        <p class="pieDepagina">Copyright 2023 by Zarico.</p>
-        <div class="instagram"><p><i class="bi bi-instagram"></i> vendetta.beauty</p></div>
+    <!-- ═══ FOOTER ═══ -->
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <img src="img/LOGO2026VENDETTA.png" alt="Vendetta Beauty" class="footer-logo">
+                <p>Cosmiatría Integral & Wellness. Cuidado profesional y personalizado de tu piel con los mejores productos y técnicas.</p>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/vendetta.beauty" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="https://wa.me/" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4>Navegación</h4>
+                <a href="index.html">Home</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="blog.html">Blog</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+            <div class="footer-column">
+                <h4>Servicios</h4>
+                <a href="servicios.html">Limpieza Facial</a>
+                <a href="servicios.html">Lifting de Pestañas</a>
+                <a href="servicios.html">Esmaltado</a>
+                <a href="servicios.html">Dermaplaning</a>
+                <a href="servicios.html">Microneedling</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year"></span> Vendetta Beauty — Todos los derechos reservados</p>
+            <p>Diseño por Zarico</p>
+        </div>
     </footer>
-    
+
+    <script src="script/script.js"></script>
 </body>
 </html>

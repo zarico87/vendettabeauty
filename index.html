@@ -1,102 +1,265 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VENDETTA_BEAUTY</title>
+    <title>Vendetta Beauty — Cosmiatría Integral & Wellness</title>
+    <meta name="description" content="Vendetta Beauty: Cosmiatría integral, skincare avanzado, lifting de pestañas, esmaltado semipermanente y más. Atendida por Zarina, dermatocosmiatra profesional.">
 
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 </head>
-    
 <body>
-        
-    <nav>
-        <div class="logo-container">
-            <img  class="logo" src="img/LOGO2026VENDETTACONSOMBRAOSCURA.png" alt="logodevendetta">
-        </div>
-        <div class="link-container">
-            <a href="index.html">Home</a>
+
+    <!-- ═══ NAVIGATION ═══ -->
+    <nav class="site-nav" id="site-nav">
+        <a href="index.html" class="nav-logo">
+            <img src="img/LOGO2026VENDETTACONSOMBRAOSCURA.png" alt="Vendetta Beauty Logo">
+        </a>
+        <div class="nav-links" id="nav-links">
+            <a href="index.html" class="active">Home</a>
             <a href="servicios.html">Servicios</a>
+            <a href="blog.html">Blog</a>
             <a href="contacto.html">Contacto</a>
         </div>
-        
+        <button class="btn-menu" id="btn-menu" aria-label="Abrir menú">
+            <i class="bi bi-list"></i>
+        </button>
     </nav>
 
-    <button class="btn-menu" id="btn-menu">
-        <i class="bi bi-list"></i>
-      </button>
+    <!-- ═══ MOBILE NAV OVERLAY ═══ -->
+    <div class="mobile-nav-overlay" id="mobile-nav">
+        <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Cerrar menú">
+            <i class="bi bi-x-lg"></i>
+        </button>
+        <a href="index.html">Home</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="blog.html">Blog</a>
+        <a href="contacto.html">Contacto</a>
+    </div>
 
-      <h1> Vendetta Beauty</h1>
-     
-    <header>
-        <div class="title-container">
-            <h2>Cosmiatría Integral & Wellness</h2>
-        </div>
-        <div class="slogan-container">
-            <h3 class="slogan">Sentirse para verse bien</h3>
-        </div>
-        
-        
-      
-    </header>
+    <div class="nav-spacer"></div>
 
-    <main>
-        <div class="hero">
-            <div class="cardPhoto">
-                <img  src="img/zarinacirculonuevo.png" alt="foto de Zarina ">
+    <!-- ═══ HERO SECTION ═══ -->
+    <section class="hero-section" id="hero">
+        <div class="hero-content">
+            <img src="img/LOGO2026VENDETTA.png" alt="Vendetta Beauty" class="hero-logo">
+            <h1 class="hero-title">Vendetta Beauty</h1>
+            <h2 class="hero-subtitle">Cosmiatría Integral & Wellness</h2>
+            <p class="hero-slogan">Sentirse para verse bien</p>
+            <a href="contacto.html" class="hero-cta">Reservá tu turno</a>
+        </div>
+    </section>
+
+    <!-- ═══ ABOUT SECTION ═══ -->
+    <section class="about-section" id="about">
+        <div class="section-heading reveal">
+            <h2>Sobre Mí</h2>
+            <div class="heading-line"></div>
+        </div>
+        <div class="about-grid">
+            <div class="about-photo-wrapper reveal">
+                <div class="about-photo">
+                    <img src="img/zarinacirculonuevo.png" alt="Zarina — Dermatocosmiatra">
+                </div>
+                <div class="about-photo-accent"></div>
             </div>
-            <div class="info-aboutme">
-                <div class="parrafoHome">
-                    <p > <strong>
-                        Hola mi nombre es Zarina,<br> soy Dermatocosmiatra, comencé en <br>
-                        el mundo del Skincare en el 2017,<br> Mis conocimientos se basan en 
-                        en el esfuerzo,<br>dedicación y pasión por esta rama de la salud y<br> por distintos cursos 
-                        realizados en mi trayectoria:
-                         </strong> 
-                     </p>
-                     
-                 </div>
-                 <div class="parrafoListas">
-                    <p >
-                        <ul>
-                            <li>Curso de Manicuría,Esmaltado Semipermanente y Esculpidas en BD NAILS.(2017)</li>
-                            <li>Curso de Cosmetología realizado en Estética 360.(2020)</li>
-                            <li>Curso de Esteticista realizado en Estética 360.(2020)</li>
-                            <li>Dermatocosmiatría realizado en Academia Específicos Bs As.(2021)</li>
-                            <li>Curso de Química Cosmética realizado en Instituto Mariana Barrera.(2022)</li>
-                            <li>Curso de Microneedling realizado en Instituto Mariana Barrera.(2021)</li>
-                            <li>Curso Pestañas pxp ,Volumen Ruso en Academia Beautifull.(2021)</li>
-                            <li>Diplomado en Ciencias Estéticas realizado en Estética 360.(2022)</li>
-                            <li>Bioseguridad y Anatomía para Manicuristas by Verónica Burel.(2025)</li>
-                            <li>Curso de Exosomas en Estética 360.(2025)</li>
-                            <li>Brown Lamination en Neicha Argentina.(2025)</li>
-                            <li>Curso de Lifting Coreano y Tinte.(2025)</li>
-                            <li>Curso de Maquillaje Social en Idraet ProInstitute.(2025)</li>
-                        </ul>
-                     </p>
-                 </div>
-                 
+            <div class="about-text reveal reveal-delay-1">
+                <h3>Hola, mi nombre es Zarina</h3>
+                <p class="about-intro">
+                    Soy Dermatocosmiatra, comencé en el mundo del Skincare en el 2017. 
+                    Mis conocimientos se basan en el esfuerzo, dedicación y pasión por 
+                    esta rama de la salud y por distintos cursos realizados en mi trayectoria.
+                </p>
+                <div class="about-credentials">
+                    <div class="credential-item">
+                        <span class="credential-year">2017</span>
+                        <span>Curso de Manicuría, Esmaltado Semipermanente y Esculpidas en BD NAILS</span>
+                    </div>
+                    <div class="credential-item">
+                        <span class="credential-year">2020</span>
+                        <span>Curso de Cosmetología y Esteticista en Estética 360</span>
+                    </div>
+                    <div class="credential-item">
+                        <span class="credential-year">2021</span>
+                        <span>Dermatocosmiatría en Academia Específicos Bs As</span>
+                    </div>
+                    <div class="credential-item">
+                        <span class="credential-year">2021</span>
+                        <span>Microneedling en Instituto Mariana Barrera</span>
+                    </div>
+                    <div class="credential-item">
+                        <span class="credential-year">2021</span>
+                        <span>Pestañas PxP y Volumen Ruso en Academia Beautifull</span>
+                    </div>
+                    <div class="credential-item">
+                        <span class="credential-year">2022</span>
+                        <span>Química Cosmética en Instituto Mariana Barrera</span>
+                    </div>
+                    <div class="credential-item">
+                        <span class="credential-year">2022</span>
+                        <span>Diplomado en Ciencias Estéticas en Estética 360</span>
+                    </div>
+                    <div class="credential-item">
+                        <span class="credential-year">2025</span>
+                        <span>Bioseguridad y Anatomía para Manicuristas by Verónica Burel</span>
+                    </div>
+                    <div class="credential-item">
+                        <span class="credential-year">2025</span>
+                        <span>Exosomas, Brown Lamination, Lifting Coreano y Maquillaje Social</span>
+                    </div>
+                </div>
             </div>
-         
-
         </div>
-       
-       
- 
-     
-    </main>
+    </section>
 
-    <script src="./script/script.js"></script>
+    <!-- ═══ SERVICES PREVIEW ═══ -->
+    <section class="services-section" id="services-preview">
+        <div class="section-heading reveal">
+            <h2>Nuestros Servicios</h2>
+            <div class="heading-line"></div>
+            <p>Tratamientos personalizados para el cuidado de tu piel y belleza</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card reveal">
+                <div class="service-card-image">
+                    <img src="img/limpieza.png" alt="Limpieza profunda facial">
+                    <div class="service-card-overlay"></div>
+                </div>
+                <div class="service-card-body">
+                    <h3>Limpieza Profunda Facial</h3>
+                    <p>Limpieza profesional que renueva tu piel desde la primera sesión</p>
+                </div>
+            </div>
+            <div class="service-card reveal reveal-delay-1">
+                <div class="service-card-image">
+                    <img src="img/permanente.png" alt="Lifting de Pestañas">
+                    <div class="service-card-overlay"></div>
+                </div>
+                <div class="service-card-body">
+                    <h3>Lifting de Pestañas</h3>
+                    <p>Curvado natural y duradero que realza tu mirada</p>
+                </div>
+            </div>
+            <div class="service-card reveal reveal-delay-2">
+                <div class="service-card-image">
+                    <img src="img/esmaltado.png" alt="Esmaltado Semipermanente">
+                    <div class="service-card-overlay"></div>
+                </div>
+                <div class="service-card-body">
+                    <h3>Esmaltado Semipermanente</h3>
+                    <p>Color brillante y duradero para tus manos</p>
+                </div>
+            </div>
+            <div class="service-card reveal reveal-delay-3">
+                <div class="service-card-image">
+                    <img src="img/dermaplaning.jpeg" alt="Dermaplaning">
+                    <div class="service-card-overlay"></div>
+                </div>
+                <div class="service-card-body">
+                    <h3>Dermaplaning</h3>
+                    <p>Exfoliación avanzada para una piel suave y luminosa</p>
+                </div>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 3rem;" class="reveal">
+            <a href="servicios.html" class="hero-cta">Ver todos los servicios</a>
+        </div>
+    </section>
 
-    <footer>
-       <p class="pieDepagina">Copyright 2023 by Zarico.</p> 
-       <div class="instagram"><p><i class="bi bi-instagram"></i> vendetta.beauty</p></div>
+    <!-- ═══ BLOG PREVIEW ═══ -->
+    <section class="blog-section" id="blog-preview">
+        <div class="section-heading reveal">
+            <h2>Blog & Tips de Belleza</h2>
+            <div class="heading-line"></div>
+            <p>Consejos profesionales para el cuidado de tu piel</p>
+        </div>
+        <div class="blog-grid">
+            <article class="blog-card reveal">
+                <div class="blog-card-image">
+                    <img src="img/limpieza.png" alt="Rutina de skincare">
+                </div>
+                <div class="blog-card-body">
+                    <div class="blog-card-meta">
+                        <span class="blog-category">Skincare</span>
+                        <span>15 Mayo, 2026</span>
+                    </div>
+                    <h3>5 pasos esenciales para tu rutina de skincare</h3>
+                    <p class="blog-excerpt">Descubrí cómo armar una rutina de cuidado facial efectiva con productos que realmente funcionan...</p>
+                    <a href="blog.html" class="blog-read-more">Leer más <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </article>
+            <article class="blog-card reveal reveal-delay-1">
+                <div class="blog-card-image">
+                    <img src="img/tratamientos.png" alt="Exosomas en estética">
+                </div>
+                <div class="blog-card-body">
+                    <div class="blog-card-meta">
+                        <span class="blog-category">Tratamientos</span>
+                        <span>02 Mayo, 2026</span>
+                    </div>
+                    <h3>Exosomas: la revolución en rejuvenecimiento facial</h3>
+                    <p class="blog-excerpt">Conocé todo sobre esta tecnología de punta que está transformando los tratamientos estéticos...</p>
+                    <a href="blog.html" class="blog-read-more">Leer más <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </article>
+            <article class="blog-card reveal reveal-delay-2">
+                <div class="blog-card-image">
+                    <img src="img/cejas.png" alt="Tendencias cejas">
+                </div>
+                <div class="blog-card-body">
+                    <div class="blog-card-meta">
+                        <span class="blog-category">Tendencias</span>
+                        <span>20 Abril, 2026</span>
+                    </div>
+                    <h3>Brown Lamination: la tendencia que llegó para quedarse</h3>
+                    <p class="blog-excerpt">Todo lo que necesitás saber sobre este tratamiento que da estructura y definición a tus cejas...</p>
+                    <a href="blog.html" class="blog-read-more">Leer más <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </article>
+        </div>
+    </section>
 
+    <!-- ═══ CTA SECTION ═══ -->
+    <section class="cta-section reveal">
+        <h2>¿Lista para transformar tu piel?</h2>
+        <p>Reservá tu turno y empezá a disfrutar de un cuidado profesional personalizado</p>
+        <a href="contacto.html" class="cta-btn">Contactanos</a>
+    </section>
+
+    <!-- ═══ FOOTER ═══ -->
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <img src="img/LOGO2026VENDETTA.png" alt="Vendetta Beauty" class="footer-logo">
+                <p>Cosmiatría Integral & Wellness. Cuidado profesional y personalizado de tu piel con los mejores productos y técnicas.</p>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/vendetta.beauty" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="https://wa.me/" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4>Navegación</h4>
+                <a href="index.html">Home</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="blog.html">Blog</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+            <div class="footer-column">
+                <h4>Servicios</h4>
+                <a href="servicios.html">Limpieza Facial</a>
+                <a href="servicios.html">Lifting de Pestañas</a>
+                <a href="servicios.html">Esmaltado</a>
+                <a href="servicios.html">Dermaplaning</a>
+                <a href="servicios.html">Microneedling</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year"></span> Vendetta Beauty — Todos los derechos reservados</p>
+            <p>Diseño por Zarico</p>
+        </div>
     </footer>
 
+    <script src="script/script.js"></script>
 </body>
 </html>
